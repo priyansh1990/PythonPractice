@@ -1,3 +1,5 @@
+__author__ = 'Pri'
+
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.restless import APIManager
@@ -12,11 +14,6 @@ class Person(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.Text)
     last_name = db.Column(db.Text)
-
-
-@app.route('/create')
-def create():
-    return "<h2> This is create page </h2>"
 
 
 db.create_all()

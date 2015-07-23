@@ -2,7 +2,7 @@
 # smallest= None
 #
 # while True:
-#     inp = raw_input("Enter the number: ")
+# inp = raw_input("Enter the number: ")
 #     if inp == "done":break
 #
 #     try:
@@ -49,5 +49,5 @@
 
 text = "X-DSPAM-Confidence:    0.8475";
 number = text.find(':')
-n = text[number+1:].strip()
+n = text[number + 1:].strip()
 print float(n)
