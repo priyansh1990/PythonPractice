@@ -47,7 +47,9 @@
 # c = a + b
 # print (c)
 
-text = "X-DSPAM-Confidence:    0.8475";
-number = text.find(':')
-n = text[number + 1:].strip()
-print float(n)
+# text = "X-DSPAM-Confidence:    0.8475";
+# number = text.find(':')
+# n = text[number + 1:].strip()
+# print float(n)
+x=0
+print x == 3
