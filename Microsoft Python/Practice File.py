@@ -51,5 +51,3 @@
 # number = text.find(':')
 # n = text[number + 1:].strip()
 # print float(n)
-x=0
-print x == 3
