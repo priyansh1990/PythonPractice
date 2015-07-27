@@ -3,7 +3,7 @@
 #
 # while True:
 # inp = raw_input("Enter the number: ")
-#     if inp == "done":break
+# if inp == "done":break
 #
 #     try:
 #         num = float(inp)

@@ -30,7 +30,7 @@
 country = raw_input("Which country are you from").upper()
 #
 # if(country=="USA"):
-#     print("Hello")
+# print("Hello")
 # elif(country=="GERMANY"):
 #     print("Gluten")
 # elif(country=="FRANCE"):
