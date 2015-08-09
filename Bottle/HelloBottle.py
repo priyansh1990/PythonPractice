@@ -10,7 +10,6 @@ __author__ = 'Pri'
 #
 
 import pymongo
-
 from pymongo import MongoClient
 
 

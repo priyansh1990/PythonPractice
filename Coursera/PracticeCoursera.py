@@ -1,53 +1,24 @@
-__author__ = 'Pri'
-a = ["apple", "banana", "pear"]
-# print(a)
+import SimpleGUICS2Pygame.simpleguics2pygame as simplegui
 
-h = [1, 2, 3]
-# print(h)
-# print type(h)
 
-c = [1, a, 2, 3]
-# print(c[0:])
+# define draw handler
 
-# print(c[:])
+def draw(canvas):
+    canvas.draw_circle([100, 100], 50, 2, "Red", "Pink")
+    canvas.draw_circle([300, 300], 50, 2, "Red", "Pink")
+    canvas.draw_line([100, 100],[300, 300], 2, "Black")
+    canvas.draw_circle([100, 300], 50, 2, "Green", "Lime")
+    canvas.draw_circle([300, 100], 50, 2, "Green", "Lime")
+    canvas.draw_line([100, 300],[300, 100], 2, "Black")
+    canvas.draw_polygon([[150, 150], [250, 150], [250, 250], [150, 250]], 2, "Blue", "Aqua")
+    canvas.draw_text("An example of drawing", [60, 385], 24, "Black")
 
-things = ['apples', 'orange', 'pear', 'grape', 'kiwi']
-# print(things[1:3])
 
-# if 'pear' in things:
-# print("There is")
+# Create a frame and assign callbacks to event handlers
+frame = simplegui.create_frame("Home", 400, 400)
+frame.set_draw_handler(draw)
+frame.set_canvas_background("Yellow")
 
-# if not 'mango' in things:
-# print("No")
 
-a = {'name': 'Priyansh', 'Fruits': things}
-
-# del a['name']
-# print(a['Fruits'][0:2])
-
-a['Fruits'].append('Mango')
-
-# print(a)
-
-# myArray = [[1, 2], [3, 4]]
-#
-# print(myArray)
-
-# new_fruit = []
-#
-# for item in things:
-# print(item)
-# new_fruit.append(item)
-#
-# # print(new_fruit)
-
-# person = {'name': 'priyansh', 'surname': 'agrwal', 'color': 'blue', 'hair': 'black'}
-#
-# for key in person:
-#     print key + ' Value is ' + (person[key])
-
-# i = 0
-# while i < len(things):
-#     print(things[i])
-#     i += 1
-
+# Start the frame animation
+frame.start()
