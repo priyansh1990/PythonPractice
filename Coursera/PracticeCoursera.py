@@ -24,3 +24,20 @@ a = {'name': 'Priyansh', 'Fruits': things}
 
 # del a['name']
 print(a['Fruits'][0:2])
+
+a['Fruits'].append('Mango')
+
+print(a)
+
+# myArray = [[1, 2], [3, 4]]
+#
+# print(myArray)
+
+new_fruit = []
+
+for item in things:
+    print(item)
+    new_fruit.append(item)
+
+print(new_fruit)
+
