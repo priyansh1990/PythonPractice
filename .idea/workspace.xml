@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="165406b6-9d9c-4d95-83a7-2bfa1b16f0ff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Coursera/Timer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Coursera/PracticeCoursera.py" afterPath="$PROJECT_DIR$/Coursera/PracticeCoursera.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python Projects.iws" />
@@ -29,7 +27,7 @@
     <SUITE FILE_PATH="coverage/Python Projects$Eve.coverage" NAME="Eve Coverage Results" MODIFIED="1430645288824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/eve-demo-client-master" />
     <SUITE FILE_PATH="coverage/Python Projects$MongoDB.coverage" NAME="MongoDB Coverage Results" MODIFIED="1439048990587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bottle" />
     <SUITE FILE_PATH="coverage/Python Projects$Text_Message.coverage" NAME="Entertainment Coverage Results" MODIFIED="1428603843374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python Projects$coursera.coverage" NAME="coursera Coverage Results" MODIFIED="1439126540008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Coursera" />
+    <SUITE FILE_PATH="coverage/Python Projects$coursera.coverage" NAME="coursera Coverage Results" MODIFIED="1439127982670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Coursera" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -46,8 +44,8 @@
       <file leaf-file-name="PracticeCoursera.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Coursera/PracticeCoursera.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2598187" vertical-offset="314" max-vertical-offset="833">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.2704402" vertical-offset="497" max-vertical-offset="1003">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -560,7 +558,11 @@
       <created>1439126653537</created>
       <updated>1439126653537</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Dictionaries">
+      <created>1439126685627</created>
+      <updated>1439126685627</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1044,8 +1046,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Coursera/PracticeCoursera.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2598187" vertical-offset="314" max-vertical-offset="833">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.2704402" vertical-offset="497" max-vertical-offset="1003">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
