@@ -12,7 +12,7 @@ s3 = " t-shirts!"
 # Combining strings
 a = ' and '
 s4 = "Warren" + a + "Rixner" + ' are nuts!'
-print s4
+# print s4
 
 # Characters and slices
 print s1[3]

@@ -14,18 +14,16 @@ stop = True
 # define helper function format that converts time
 # in tenths of seconds into formatted string A:BC.D
 def format(t):
-    tenth_sec = t % 10
-    sec = int(t / 10) % 10
-    minutes = int(t / 600) % 600
-    ten_min = int(t / 100) % 6
-    string = str(minutes) + ":" + str(ten_min) + str(sec) + "." + str(tenth_sec)
+    milli_sec = t % 10
+    sec = int(t // 10) % 10
+    ten_sec = int(t // 100) % 6
+    minutes = int(t // 600) % 600
+    string = str(minutes) + ":" + str(ten_sec) + str(sec) + "." + str(milli_sec)
     return string
 
 
-pass
-
 # define event handlers for buttons; "Start", "Stop", "Reset"
-def Start():
+def start():
     global count, stop
     stop = False
     timer.start()
@@ -33,18 +31,20 @@ def Start():
 
 def Stop():
     global total_stops, success_stops, stop
+
+    print(stop)
     if stop == False:
         if count % 10 == 0 and count != 0:
             success_stops += 1
             total_stops += 1
         elif count != 0:
             total_stops += 1
-    stopped = True
+    stop = True
     timer.stop()
 
 
 def Reset():
-    global count, success_stops, total_stops
+    global count, success_stops, total_stops, stop
     count = 0
     stop = True
     total_stops = 0
@@ -69,7 +69,7 @@ frame = simplegui.create_frame("Stopwatch game", 250, 250)
 frame.set_canvas_background('green')
 
 # Register event handlers
-frame.add_button("Start", Start, 100)
+frame.add_button("Start", start, 100)
 frame.add_button("Stop", Stop, 100)
 frame.add_button("Reset", Reset, 100)
 frame.set_draw_handler(draw)
