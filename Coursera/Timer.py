@@ -16,8 +16,10 @@ stop = True
 def format(t):
     milli_sec = t % 10
     sec = int(t // 10) % 10
-    ten_sec = int(t // 100) % 6
-    minutes = int(t // 600) % 600
+    d = (t // 100)
+    ten_sec = int(d) % 6
+    aa = t // 600
+    minutes = int(aa) % 600
     string = str(minutes) + ":" + str(ten_sec) + str(sec) + "." + str(milli_sec)
     return string
 
@@ -29,11 +31,9 @@ def start():
     timer.start()
 
 
-def Stop():
+def stopButton():
     global total_stops, success_stops, stop
-
-    print(stop)
-    if stop == False:
+    if not stop:
         if count % 10 == 0 and count != 0:
             success_stops += 1
             total_stops += 1
@@ -43,7 +43,7 @@ def Stop():
     timer.stop()
 
 
-def Reset():
+def reset():
     global count, success_stops, total_stops, stop
     count = 0
     stop = True
@@ -51,12 +51,10 @@ def Reset():
     success_stops = 0
     timer.stop()
 
-
 # define event handler for timer with 0.1 sec interval
 def tick():
     global count
     count += 1
-
 
 # define draw handler
 def draw(canvas):
@@ -70,11 +68,11 @@ frame.set_canvas_background('green')
 
 # Register event handlers
 frame.add_button("Start", start, 100)
-frame.add_button("Stop", Stop, 100)
-frame.add_button("Reset", Reset, 100)
+frame.add_button("Stop", stopButton, 100)
+frame.add_button("Reset", reset, 100)
 frame.set_draw_handler(draw)
 timer = simplegui.create_timer(interval, tick)
 
 # Start the frame animation
 frame.start()
-Reset()
+reset()
